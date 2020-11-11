@@ -1,0 +1,224 @@
+/* Definimos el REMS  para no usar pixeles ya que rem es mas excato en vez de pixeles hoy en dia 
+     62.5%  =  10 px   de 16px     
+*/
+
+/*poner siempre ya que no sumara padding a los pixeles*/
+html{
+    box-sizing: border-box;
+    font-size: 65.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+/*  header */
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+
+}
+
+.site-header.inicio{
+    background-image: url(../img/fondo08_v2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    min-height: 20rem;
+
+}
+/* clase global para centrar contenedor */
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1 {
+ font-size: 3.8rem;
+}
+
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+
+/*fin centrar contenedor */
+
+
+
+/* UTILES */
+
+/*En este ccs nos ayuda a siempre centrar las iamgenes*/
+img{
+    max-width: 100%;
+}
+
+
+/* aqui definimos botones*/
+.boton{
+   color: #ffffff;
+   font-weight: 700;
+   text-decoration: none;
+   font-size: 1.8rem;
+   padding: 1rem 3rem;
+   margin-top: 3rem;
+   width: 100%;
+   display: block;
+   text-align: center;
+   justify-content: space-between;
+}
+
+.boton-naranjo{
+    background-color: rgba(221, 17, 17, 0.972);
+    display: block;
+}
+
+
+.boton-verde{
+   color: slateblue;
+}
+
+
+/* utilitarios para section */
+.seccion{
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+}
+
+
+
+body{
+    font-family: 'Lato' , sans-serif;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: black;
+}
+
+.encabezado{
+    color: darkred;
+}
+
+.contenido-header{
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.contenido-header h1{
+   color: white;
+}
+
+
+
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    align-items: center;  /**/
+}
+
+
+.navegacion a{
+    color: rgba(255,255, 255, 100);
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.navegacion a:last-of-type{
+    margin: 0;
+}
+
+.navegacion a:hover{
+    color: green;
+}
+
+.encabezado-titulo{
+    font-weight: 300;
+    text-align: center;
+}
+.contenedor-anuncio{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    /* si tuvieramos 8 secciones el wrap las ordena hacia abajo
+    el hijo deben incluir flex-shrink: 0; 
+     flex-wrap: wrap;
+    */
+
+    
+}
+
+
+.contenido-anuncio{
+    /*flex-shrink: 0;*/
+    font-weight: 300;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.anuncio{
+    flex-basis: calc(25% - 1rem);
+    text-align: justify;
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+}
+
+.encabezado-anuncio{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+.contenido-texto{
+   text-align: justify;
+}
+
+
+/*contactanos*/
+
+.imagen-contacto{
+    background-image: url(../img/fondo10.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto{
+  flex: 1;
+  color: #ffffff;
+}
+
+
+
+
+
+/***********************************************************/
+
+/*paginas internas*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 70% 50%;
+    
+
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 4rem 0;
+}
